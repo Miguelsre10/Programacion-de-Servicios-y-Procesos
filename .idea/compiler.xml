@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="Actividades_UDP" />
+        <module name="UD2-Practica02" />
+        <module name="UD2-Ejemplo2_Productor_Consumidor" />
+        <module name="UD2-Practica01" />
+        <module name="Ej_01" />
+        <module name="Ejemplo01" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>
