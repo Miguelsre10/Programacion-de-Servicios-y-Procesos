@@ -33,3 +33,4 @@ public class Principal {
 
     }
 }
+//redirectOutput(new File("salida.txt"));
