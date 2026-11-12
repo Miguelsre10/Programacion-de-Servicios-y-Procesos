@@ -1,0 +1,18 @@
+¿Qué es la condición de carrera que aparece en esta práctica?
+	Que dos hilos traten de acceder a una cuenta al mismo tiempo, ya sea para ingresar o retirar dinero
+
+
+¿Qué diferencia existe entre sincronizar un método y usar synchronized(objeto)?
+	synchronized bloquea el objeto que llama al método y synchronized(objeto) bloquea a "objeto"
+
+¿Por qué no basta con proteger por separado getSaldo() y retirar()?
+	Al usar el synchronized en el método, solo bloquea el objeto que lo llama, por lo que se bloquearía origen y destino por separado, lo que puede producir un deadlock
+
+¿Por qué una transferencia necesita bloquear dos objetos?
+	Para evitar que se pisen las ediciones de los valores en memoria
+
+¿Cómo se produce el deadlock entre dos transferencias en sentidos opuestos?
+	cuando una tranferencia bloquea "A" e intenta bloquear "B", pero otra transferencia ha bloqueado "B" y busca bloquear "A"
+
+¿Por qué imponer un orden fijo de adquisición de bloqueos evita el deadlock?
+	Porque si siempre se bloquea "A" antes que "B", aunque una transferencia tenga "B" como origen y "A" como destino, siempre bloqueará "A" antes que "B" 
